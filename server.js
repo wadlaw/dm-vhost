@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 4000
 
-const apiApp = require('../API/server').app;
+const apiApp = require('../api/server').app;
 
 //app.use(Incoming);
 app.use(vhost('api.*', apiApp));
